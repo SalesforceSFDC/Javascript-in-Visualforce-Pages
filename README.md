@@ -6,3 +6,5 @@
 * `<apex:page>
     <apex:includeScript value="{!$Resource.jquery}"/>
 </apex:page>`
+
+## JavaScript Remoting for Apex Controllers
