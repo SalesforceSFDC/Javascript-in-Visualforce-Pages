@@ -1,3 +1,6 @@
+<!-- It takes as arguments the element that triggered the event (input) and the DOM ID (textid) 
+of the target panel containing the text to be affected. -->
+
 <apex:page id="thePage">
     <!-- A simple function for changing the font. -->
     <script>
