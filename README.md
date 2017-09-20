@@ -66,4 +66,19 @@ ct.retrieve({where: {CloseDate: {eq: myDate}}}, function() {});
 ### Format and Options for Remote Objects Query Criteria
 Remote Objects uses an object to specify criteria for `retrieve()` operations.  Use this object to specify where, limit, and offset conditions for your queries.
 
-The structured 
+The structured format of the query object enables Visualforce to validate the criteria at save time, reducing the likelihood of runtime errors.  
+```apex
+<apex:remoteObjectsjsNamespace="RemoteObjectModel">
+    <apex:remoteObjectModel name="Contact" fields="FirstName,LastName"/>
+</apex:remoteObjects>
+
+<script>
+var ct = new RemoteObjectModel.Contact();
+ct.retrieve(
+    { where: {
+        FirstName: {eq: 'Marc'},
+        LastName: {eq: 'Benioff'}
+    },
+    orderby: [ {LastName: 'ASC'}, {FirstName: 'ASC'} ],
+</script>
+```
