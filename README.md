@@ -80,5 +80,16 @@ ct.retrieve(
         LastName: {eq: 'Benioff'}
     },
     orderby: [ {LastName: 'ASC'}, {FirstName: 'ASC'} ],
+    limit: 1 },
+    
+    function(err, records) {
+        if (err) {
+            alert(err);
+        } else {
+            console.log(records.length);
+            console.log(records[0]);
+        }
+    }
+};
 </script>
 ```
