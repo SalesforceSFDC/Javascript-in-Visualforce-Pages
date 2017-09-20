@@ -1,0 +1,26 @@
+<!-- Filter results based on a date range by using a combination of lte and gte. -->
+<apex:remoteObjects jsNamespace="RemoteObjectModel">
+    <apex:remoteObjectModel name="Account" fields="Id,Name,CreatedDate"/>
+</apex:remoteObjects>
+<script>
+    var account_created_from_date = new Date('2017-01-01');
+    var account_created_to_date = new Date('2018-01-01');
+    var clauses = {
+'where': {
+'CreatedDate': { 'lte': account_created_to_date },
+'and': {
+    'CreatedDate': { 'gte': account_created_from_date },
+    'Id': { 'ne': '' }
+}
+    var ct = new RemoteObjectModel.Account();
+    ct.retrieve(
+        clauses,
+        function(err, records) {
+            if (err) {
+                console.log(err);
+            } else {
+                console.log(records.length);
+                console.log(records[0]);
+} }
+); 
+</script>
