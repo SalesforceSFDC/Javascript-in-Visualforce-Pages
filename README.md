@@ -50,3 +50,5 @@ ct.retrieve(function() {
  return({where: {FirstName: {eq: 'Marc'}}});
  }, function() {}); // function returning query object
 ```
+
+* `retrieve()` does not return a result directly.  The callback function enables you to handle the server response asynchronously.
