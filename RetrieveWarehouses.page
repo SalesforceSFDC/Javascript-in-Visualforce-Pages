@@ -1,5 +1,7 @@
 <apex:page>
     <!-- Remote Objects definition to set accessible sObjects and fields -->
+    <!-- Remote Objects components that specify which objects and fields to make accessible on the page.-->
+
     <apex:remoteObjects >
         <apex:remoteObjectModel name="Warehouse__c" jsShorthand="Warehouse"
             fields="Name,Id">
