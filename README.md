@@ -53,3 +53,7 @@ ct.retrieve(function() {
 
 * `retrieve()` does not return a result directly.  The callback function enables you to handle the server response asynchronously.
 * All server operations that use Remote Objects are performed asynchronously.  Any code that depends on the request being completed, including handling returned results, must be placed in the callback function.
+* The callback function can accept up to three arguments:
+```javascript
+function callback(Error error, Array results, Object event) {// ...}
+```
