@@ -96,14 +96,14 @@ ct.retrieve(
 
 ### where Conditions
 where conditions enable you to filter the results of a retrieve operation, much the same way that a WHERE condition in a SOQL query does. The operators that are available for where conditions are:
-• eq: equals
-• ne: not equals
-• lt: less than
-• lte: less than or equals
-• gt: greater than
-• gte: greater than or equals
-• like: string matching. As with SOQL, use “%” as a wildcard character.
-• in: in, used for finding a value that matches any of a set of fixed values. Provide values as an array, for example, ['Benioff', 'Jobs', 'Gates'].
-• nin: not in, used for finding a value that matches none of a set of fixed values. Provide values as an array, for example, ['Benioff', 'Jobs', 'Gates'].
-• and: logical AND, used for combining conditions
-• or: logical OR, used for combining conditions
+* eq: equals
+* ne: not equals
+* lt: less than
+* lte: less than or equals
+* gt: greater than
+* gte: greater than or equals
+* like: string matching. As with SOQL, use “%” as a wildcard character.
+* in: in, used for finding a value that matches any of a set of fixed values. Provide values as an array, for example, ['Benioff', 'Jobs', 'Gates'].
+* nin: not in, used for finding a value that matches none of a set of fixed values. Provide values as an array, for example, ['Benioff', 'Jobs', 'Gates'].
+* and: logical AND, used for combining conditions
+* or: logical OR, used for combining conditions
