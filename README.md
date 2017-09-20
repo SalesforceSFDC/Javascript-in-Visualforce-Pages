@@ -35,3 +35,7 @@
 
 ### Retrieving Records With Remote Objects
 * Retrieve records by calling `retrieve()` on a Remote Object model instance.
+* `retrieve()` requires two arguments, one for query criteria and one for a callback handler:
+```javascript
+RemoteObjectModel.retrieve({criteria}, callback_function)
+```
