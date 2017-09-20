@@ -39,3 +39,14 @@
 ```javascript
 RemoteObjectModel.retrieve({criteria}, callback_function)
 ```
+* `criteria` can be a Remote Objects' query object or a function that returns one.  The following two calls are equivalent:
+```javascript
+var ct = new RemoteObjectModel();
+
+// Empty callback functions for simplicity
+ct.retrieve({where: {FirstName: {eq: 'Marc'}}}, function() {}); //query object
+
+ct.retrieve(function() {
+ return({where: {FirstName: {eq: 'Marc'}}});
+ }, function() {}); // function returning query object
+```
