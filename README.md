@@ -34,3 +34,4 @@
 3. 
 
 ### Retrieving Records With Remote Objects
+* Retrieve records by calling `retrieve()` on a Remote Object model instance.
