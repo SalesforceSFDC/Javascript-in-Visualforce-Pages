@@ -13,3 +13,4 @@
     * The remote method invocation you add to the Visualforce page, written in JavaScript.
     * The remote method definition in your Apex controller class. This method definition is written in Apex, but there are some important differences from normal action methods.
     * The response handler callback function you add to or include in your Visualforce page, written in JavaScript.
+* JavaScript remoting is a tool that front-end developers can use to make an AJAX request from a Visualforce page directly to an Apex controller. JavaScript remoting allows you to run asynchronous actions by decoupling the page from the controller and to perform tasks on the page without having to reload the entire page.
