@@ -32,3 +32,5 @@
 1. Remote Objects components that specify which objects and fields to make accessible on the page.
 2. jsShorthand attribute, which maps the full Salesforce API name to a simpler, shorter name to use in your JavaScript code. 
 3. 
+
+### Retrieving Records With Remote Objects
