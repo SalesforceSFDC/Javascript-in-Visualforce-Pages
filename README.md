@@ -62,3 +62,8 @@ To retrieve records using dates, pass in the Javascript date object to the query
 var myDate = new Date('2007-01-20');
 ct.retrieve({where: {CloseDate: {eq: myDate}}}, function() {});
 ```
+
+### Format and Options for Remote Objects Query Criteria
+Remote Objects uses an object to specify criteria for `retrieve()` operations.  Use this object to specify where, limit, and offset conditions for your queries.
+
+The structured 
