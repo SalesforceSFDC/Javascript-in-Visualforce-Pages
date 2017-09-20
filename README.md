@@ -30,5 +30,5 @@
 * Doesn’t provide automatic relationship traversals; you must look up related objects yourself
 
 1. Remote Objects components that specify which objects and fields to make accessible on the page.
-* jsShorthand attribute, which maps the full Salesforce API name to a simpler, shorter name to use in your JavaScript code. 
-* 
+2. jsShorthand attribute, which maps the full Salesforce API name to a simpler, shorter name to use in your JavaScript code. 
+3. 
