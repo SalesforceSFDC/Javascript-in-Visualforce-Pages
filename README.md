@@ -57,3 +57,8 @@ ct.retrieve(function() {
 ```javascript
 function callback(Error error, Array results, Object event) {// ...}
 ```
+To retrieve records using dates, pass in the Javascript date object to the query:
+```javascript
+var myDate = new Date('2007-01-20');
+ct.retrieve({where: {CloseDate: {eq: myDate}}}, function() {});
+```
